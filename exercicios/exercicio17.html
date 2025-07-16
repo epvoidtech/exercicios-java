@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercício 17 - Alterar Estilo por Seleção</title>
+  <style>body { font-family: Arial; margin: 30px; }</style>
+</head>
+<body>
+
+  <h2>17. Alterar estilo por seleção</h2>
+  <select onchange="aplicarEstiloTexto(this.value)">
+    <option value="normal">Normal</option>
+    <option value="bold">Negrito</option>
+    <option value="italic">Itálico</option>
+    <option value="underline">Sublinhado</option>
+  </select>
+  <p id="texto17">Texto a estilizar</p>
+
+  <nav>
+    <a href="exercicio16.html">Anterior</a> |
+    <a href="exercicio18.html">Próximo</a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>

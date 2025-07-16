@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercício 16 - Alterar Conteúdo por Seleção</title>
+  <style>body { font-family: Arial; margin: 30px; }</style>
+</head>
+<body>
+
+  <h2>16. Alterar conteúdo por seleção</h2>
+  <select onchange="document.getElementById('resultado16').textContent = this.value">
+    <option value="Opção 1 selecionada">Opção 1</option>
+    <option value="Opção 2 selecionada">Opção 2</option>
+  </select>
+  <div id="resultado16">Escolha uma opção</div>
+
+  <nav>
+    <a href="exercicio15.html">Anterior</a> |
+    <a href="exercicio17.html">Próximo</a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
