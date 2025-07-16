@@ -82,10 +82,19 @@ function adicionarItemLista() {
 
 // 11
 let temTitle11 = false;
+
 function toggleTitulo11() {
   const el = document.getElementById("titulo11");
-  if (temTitle11) el.removeAttribute("title");
-  else el.setAttribute("title", "Este é um título");
+  const exibicao = document.getElementById("exibicaoTitulo");
+
+  if (temTitle11) {
+    el.removeAttribute("title");
+    exibicao.textContent = ""; // Esconde o texto visível
+  } else {
+    el.setAttribute("title", "Este é um título");
+    exibicao.textContent = "Este é um título"; // Mostra o texto na tela
+  }
+
   temTitle11 = !temTitle11;
 }
 
@@ -111,7 +120,7 @@ function toggleMover() {
   }
   movido13 = !movido13;
 }
-
+nn
 // 14
 let botaoAtivo14 = true;
 function toggleBotao14() {
